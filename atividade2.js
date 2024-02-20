@@ -34,7 +34,7 @@ console.log("----------------------------------------------------");
 var preço = 450; //atividade 5
 var desc = 0.03;
 var desconto = preço * desc;
-var final = preço - desc;
+var final = preço - desconto;
 console.log(
   "Um cliente fez uma compra no valor de R$ 450,00 e obteve 3% de desconto. Qual o valor do desconto e o valor final da compra"
 );
