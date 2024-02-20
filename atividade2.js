@@ -1,7 +1,7 @@
 var txt1 = "Matheus"; // Atividade 1
 var num1 = "2007";
 console.log("nome:", txt1, "| nasceu:", num1);
-var idade = 2024 - 2007;
+var idade = 2024 - num1;
 console.log("Nome:", txt1, "| tem:", idade, "anos");
 console.log("----------------------------------------------------");
 
@@ -42,7 +42,7 @@ console.log("o desconto será de R$", desconto, "| valor final de:", final);
 console.log("----------------------------------------------------");
 
 var velo=95 //atividade 6
-var temp=3.30
-var dist=velo/temp
+var temp=3.5
+var dist=velo*temp
 console.log("a distancia percorrida é de:", dist,"km")
 console.log("----------------------------------------------------");
