@@ -17,7 +17,7 @@
 // console.log("multiplicacao = ",multiplicacao);
 // console.log("divisao =", divisao);
 
-//regras para nomear identificadores (var, const ou let)
+// regras para nomear identificadores (var, const ou let)
 // podem comçar com A-Z, a-z, _ ou $
 
 // var MinhaVariavel = 10;

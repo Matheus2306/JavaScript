@@ -31,3 +31,38 @@ console.table(dinos);
 
 dinos.splice(1, 1);
 console.table("dinos");
+
+console.log("");
+console.log("-----------------continuação da aula-------------------");
+var dinos = [
+  "triceratops",
+  "Tiranossauro rex",
+  "estegossauro",
+  "anquilossauro",
+  "brontossauro",
+  "ictinossauro",
+  "pterodactilo",
+  "espinossauro",
+];
+console.table(dinos);
+
+var elemnetoProcurado = "brontossauro";
+var posição = dinos.indexOf(elemnetoProcurado);
+console.log("O " + elemnetoProcurado + " está no indice " + posição);
+
+var elemnetoProcurado = "Tiranossauro rex";
+var posição = dinos.indexOf(elemnetoProcurado);
+console.log("O " + elemnetoProcurado + " está no indice " + posição);
+
+var elemnetoProcurado = "ictinossauro";
+var posição = dinos.indexOf(elemnetoProcurado);
+console.log("O " + elemnetoProcurado + " está no indice " + posição);
+console.log("-------------------------------------------------------------------")
+//criando cópia de array (vetor)
+var copia1 = dinos.slice();//.slice() faz uma cópia real do item de vetor 
+console.log("Vetor cópia 1 ");
+console.table(copia1);
+
+var copia2 = dinos.slice(1,3)
+console.log("vetor de copia 2")
+console.table(copia2);
