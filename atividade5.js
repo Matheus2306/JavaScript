@@ -1,8 +1,13 @@
-function idadecalculada(ano, anonas) {
-  return anonas- ano;
+//01
+function idadecalculada(anonas) {
+  return 2024 - anonas;
 }
-var idade = idadecalculada(2000,2024);
+var idade = idadecalculada(2000);
 console.log(`você tem ${idade} anos`);
+//02
+console.log(
+  "====================================================================="
+);
 function kmsrodados(combustivel) {
   return combustivel * 12;
 }
