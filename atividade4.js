@@ -51,3 +51,11 @@ console.log(
   "sua idade é " + cadastro[1] + " e gosta muito da fruta " + cadastro[3]
 );
 console.log("sua cor favorita é " + cadastro[2]);
+console.log(`------------------------------------------------------------------------------------`)
+//dia 28/2
+//como fazer  com craze(``)
+var cadastro = ["Matheus", 16, "roxo", "banana", "sao domingos", "nina"];
+console.log(`ola ${cadastro[0]}! Bem vindo ao nosso sistema`)
+console.log(`você mora no endereço ${cadastro[4]} e tem um pet chamado ${cadastro[5]}`)
+console.log(`sua idade é ${cadastro[1]} e gosta muito da fruta ${cadastro[3]}`)
+console.log(`sua cor favorita é ${cadastro[2]}`)
