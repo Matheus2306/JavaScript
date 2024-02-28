@@ -27,9 +27,7 @@ function voto(idade) {
 }
 voto(20);
 
-// var idade = 16;
-// var voto = idade >= 16 ? `Pode votar` : `não pode votar`;
-// console.log(voto);
+
 console.log(
   "====================================================================="
 );
