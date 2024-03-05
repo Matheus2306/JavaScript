@@ -27,27 +27,27 @@ function voto(idade) {
 }
 voto(20);
 
-
 console.log(
   "====================================================================="
 );
 
-var idade2 = 18;
+function votação(idade2) {
+  switch (true) {
+    case idade2 <= 15:
+      console.log(`você não pode votar`);
+      break;
+    case idade2 >= 16 && idade2 < 18:
+      console.log(`Você pode votar, mas não é obrigatorio`);
+      break;
+    case idade2 >= 18 && idade2 < 84:
+      console.log(`Você é obrigado a votar `);
+      break;
+    case idade2 >= 85:
+      console.log(`você não e obrigado a votar`);
+      break;
 
-switch (true) {
-  case idade2 <= 15:
-    console.log(`você não pode votar`);
-    break;
-  case idade2 >= 16 && idade2 < 18:
-    console.log(`Você pode votar, mas não é obrigatorio`);
-    break;
-  case idade2 >= 18 && idade2 < 84:
-    console.log(`Você é obrigado a votar `);
-    break;
-  case idade2 >= 85:
-    console.log(`você não e obrigado a votar`);
-    break;
-
-  default:
-    break;
+    default:
+      break;
+  }
 }
+votação(18);
