@@ -101,49 +101,80 @@
 // novoPetizinho.setNome("Rex")
 // console.log(novoPetizinho.getNome())//rex]
 
-// console.log("============");
-console.log("--------------------Polimorfismo--------------------");
-class Animal {
-  constructor(nome) {
-    this.nome = nome;
-  }
+// // console.log("============");
+// console.log("--------------------Polimorfismo--------------------");
+// class Animal {
+//   constructor(nome) {
+//     this.nome = nome;
+//   }
 
+//   fazerBarulho() {
+//     console.log("O animal faz um barulho genérico.");
+//   }
+// }
 
-  fazerBarulho() {
-    console.log("O animal faz um barulho genérico.");
+// class Cachorro extends Animal {
+//   constructor(nome) {
+//     super(nome);
+//   }
+
+//   fazerBarulho() {
+//     console.log("O cachorro late!");
+//   }
+// }
+
+// class Gato extends Animal {
+//   constructor(nome) {
+//     super(nome);
+//   }
+
+//   fazerBarulho() {
+//     console.log("O gato mia!");
+//   }
+// }
+// const animais = [
+//     new Cachorro("Rex"),
+//     new Gato("Mia"),
+//     new Animal("Bob"), // Animal genérico
+//   ];
+
+//   for (const animal of animais) {
+//     animal.fazerBarulho();
+//   }
+
+console.log("==========exemplos=========");
+//criando uma classe retangulo
+
+class Retangulo {
+  constructor(comprimento, largura) {
+    this.comprimento = comprimento;
+    this.largura = largura;
   }
+  obterArea() {
+    return this.comprimento * this.largura;
+  }
+  obterPerimetro() {
+    return this.comprimento * 2 + this.largura*2;
+  }
+  setComprimento(novoCompriment){
+  this.comprimento=novoCompriment
+  }
+ setLargura(novaLargura){
+  this.largura=novaLargura
+ }
 }
+//criandoum objeto do tipo retangulo
+var areaPerimetro = new Retangulo(12, 6);
 
-
-class Cachorro extends Animal {
-  constructor(nome) {
-    super(nome);
-  }
-
-
-  fazerBarulho() {
-    console.log("O cachorro late!");
-  }
-}
-
-
-class Gato extends Animal {
-  constructor(nome) {
-    super(nome);
-  }
-
-
-  fazerBarulho() {
-    console.log("O gato mia!");
-  }
-}
-const animais = [
-    new Cachorro("Rex"),
-    new Gato("Mia"),
-    new Animal("Bob"), // Animal genérico
-  ];
+function alteracao(retangulo) {
+  console.table(retangulo);
+  console.log(`largura ${retangulo.largura}`)
+  console.log(`comprimento ${retangulo.comprimento}`)
+  console.log(`${retangulo.obterArea()} cm²`);
+  console.log(`${retangulo.obterPerimetro()} cm de perimetro`)
   
-  
-  for (const animal of animais) {
-    animal.fazerBarulho();
-  }
+}
+alteracao(areaPerimetro)
+areaPerimetro.setComprimento(20)
+areaPerimetro.setLargura(30)
+alteracao(areaPerimetro)
