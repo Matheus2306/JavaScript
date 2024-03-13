@@ -46,7 +46,7 @@ sorvete1.crieSorvete();
 sorvete2.crieSorvete();
 sorvete.setPreco(10.51);
 sorvete.crieSorvete();
-//outra forma de se fazer 
+//outra forma de se fazer
 console.log("-------------");
 const sorvetes = [
   new Sorvete("Morango", 5, "Grande"),
@@ -57,4 +57,37 @@ for (const sorvete of sorvetes) {
   sorvete.crieSorvete();
 }
 sorvetes[0].setPreco(10.51);
-sorvetes[0].crieSorvete()
+sorvetes[0].crieSorvete();
+console.log("-------------");
+
+//string;
+var text = "rysen 5 5600";
+var tex2 = "intel I7 14400K";
+if(text === tex2){
+  console.log("é igual")
+}else{console.log("não é igual")}
+console.log("=================")
+
+
+function identifyNumbers(str) {
+  const regex = /\d+/g;
+  const numbers = str.match(regex);
+  return numbers;
+}
+
+var extrair = "lá em casa tem 2 porcos 1 com 3 pês e o outro 4";
+let numeros = identifyNumbers(extrair);
+console.log(numeros);
+console.log("=================")
+
+
+
+function troca(frase) {
+  const palavras =frase.split(" ")
+  const palavrasinvertidas=palavras.reverse()
+  const palavrasreverse=palavrasinvertidas.join(" ")
+  return palavrasreverse
+}
+const frase = "esta é a frase"
+const fraseivertida=troca(frase)
+console.log(fraseivertida)
